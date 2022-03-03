@@ -1,0 +1,102 @@
+:root {
+    --global--color-color-black: #000;
+    --global--color-white: #fff;
+    --global--color-transparent: transparent;
+    --global--color-red: #dc2626;
+    --global--color-orange: #fdba74;
+    --global--color-yellow: #fef08a;
+    --global--color-green: #65a30d;
+    --global--color-blue: #0ea5e9;
+    --global--color-indigo: #818cf8;
+    --global--color-violet: #6b21a8;
+    --global--color-dark-gray: #333;
+    --global--color-medium-gray: #93a1bb;
+    --global--color-light-gray: #ddd;
+    }
+
+    /** Baseline Colors */
+    $color-black: #000000;
+    $color-white: #ffffff;
+    $color-transparent: transparent;
+
+    /** Primary Colors */
+    $color-red: #ca202c;
+    $color-orange: #fdba74;
+    $color-yellow: #fef08a;
+    $color-green: #65a30d;
+    $color-blue: #0ea5e9;
+    $color-indigo: #818cf8;
+    $color-violet: #6b21a8;
+
+    /* Grays */
+    $color-dark-gray: #333;
+    $color-medium-gray: #93a1bb;
+    $color-light-gray: #ddd;
+
+    /** Functional Colors */
+    $color-border: null;
+    $color-image: null;
+    $color-text: $color-medium-gray;
+    $color-heading: $color-red;
+
+    /** Form Colors */
+    $color-form-border: $color-border;
+    $color-form-background: $color-white;
+    $color-form-error: $color-red;
+
+    /**
+     * @requires /config/editor-color-palette.php to generate Block Editor UI
+     * @requires /assets/styles/theme/twentytwentyone/assets/sass/07-utilities/color-palette.colab.scss
+     *
+     * @link https://developer.wordpress.org/block-editor/developers/themes/theme-support/#block-color-palettes
+     */
+    $color-palette: (
+        /** Baseline Colors */
+        'black': $color-black,
+        'white': $color-white,
+        'transparent': $color-transparent,
+        'red': $color-red,
+        'orange': $color-orange,
+        'yellow': $color-yellow,
+        'green': $color-green,
+        'blue': $color-blue,
+        'indigo': $color-indigo,
+        'violet': $color-violet,
+        'dark-gray':$color-dark-gray,
+        'medium-gray':$color-medium-gray,
+        'light-gray': $color-light-gray
+    );
+
+    $color-palette-preset-color: (
+        /** Baseline Colors */
+        'red': 'inverted',
+        'orange': 'primary',
+        'yellow': 'primary',
+        'green': 'primary',
+        'blue': 'inverted',
+        'indigo': 'primary',
+        'violet': 'primary',
+    );
+
+    /** Gradients */
+    $gradient-transparent-to-black-40: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+    $gradient-yellow-to-green: linear-gradient($color-yellow 0%, $color-green 100%);
+    $gradient-green-to-blue: linear-gradient(226.38deg, $color-green 11.89%, $color-blue 100%);
+    $gradient-red-to-indigo: linear-gradient($color-red 0%, $color-violet 50%, $color-indigo 100%);
+    $gradient-blue-to-indigo: linear-gradient(129.23deg, $color-blue 27.89%, $color-indigo 77.04%);
+
+
+    /**
+     * @requires /config/editor-gradient-presets.php
+     * @requires /assets/styles/theme/twentytwentyone/assets/sass/07-utilities/color-palette.colab.scss
+     *
+     * @link https://developer.wordpress.org/block-editor/developers/themes/theme-support/#block-gradient-presets
+     */
+    $gradient-presets: (
+        'transparent-to-black-40': $gradient-transparent-to-black-40,
+        'red-to-indigo': $gradient-red-to-indigo,
+        'green-to-blue': $gradient-green-to-blue,
+        'yellow-to-green': $gradient-yellow-to-green,
+        'blue-to-indigo': $gradient-blue-to-indigo,
+
+    );

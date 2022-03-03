@@ -1,0 +1,31 @@
+.o-drawer__overlay {
+    @include cover;
+    z-index: 10;
+    background-color: var(--global--color-white-50);
+    display: none;
+    .show-menu & {
+        display: block;
+    }
+}
+
+.o-drawer {
+    position: absolute;
+    width: 90vw;
+    background-color: var(--branding--color-background);
+    height: 100%;
+    padding: 60px;
+    left: -90vh;
+    transition: left .5s;
+    .show-menu & {
+        left:0;
+    }
+
+}
+
+.o-drawer__close-button {
+    padding: 12px;
+    overflow: visible;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+}

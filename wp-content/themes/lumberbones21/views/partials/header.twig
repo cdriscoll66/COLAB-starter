@@ -1,0 +1,22 @@
+<header class="o-header">
+  {% include 'partials/skip-navigation.twig' %}
+  <div class="o-header__inner alignwide">
+    <div class="o-header__container">
+      <div class="menu-toggle-container">
+        <a aria-label="Open mobile" class="o-header__mobile-button js-toggle">
+          <span class="icon menu-icon"></span>
+        </a>
+      </div>
+      <div class="o-header__logo">
+        <a class="o-header__logo-link" href="{{ home_url }}">
+          {{ site_title }}
+        </a>
+      </div>
+      <div class="o-header__navigation">
+        <nav aria-label="Main" class="o-menu o-menu--main">
+        {% include 'partials/global-navigation.twig' %}
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>

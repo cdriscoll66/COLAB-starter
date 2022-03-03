@@ -1,0 +1,12 @@
+{% set menu = _context[location] %}
+
+<nav aria-label="{{ menu.name }}" class="o-footer__menu">
+                    <span class="o-footer__menu--heading">{{ menu.name }}</span>
+                    <ul>
+                        {% for item in menu.items %}
+                            <li class="{{ item.classes|join(' ') }}">
+                                <a href="{{ item.link }}">{{ item.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+            </nav>

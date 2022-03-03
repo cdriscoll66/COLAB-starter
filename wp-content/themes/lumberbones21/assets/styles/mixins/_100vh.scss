@@ -1,0 +1,56 @@
+// @mixin vh100($property) {
+//   $property: calc(100vh - 91.19px); // match .header height
+
+//   @media (min-width: 1024px) {
+//     $property: calc(100vh - 102px); // match .header height
+//   }
+
+//   .admin-bar & {
+//     $property: calc(100vh - 91.19px - 46px); // match .header height and #wpadminbar height
+
+//     @media (min-width: 783px) {
+//       $property: calc(100vh - 91.19px - 32px); // match .header height and #wpadminbar height
+//     }
+//     @media (min-width: 1024px) {
+//       $property: calc(100vh - 102px - 32px); // match .header height and #wpadminbar height
+//     }
+//   }
+// }
+
+// @mixin height-100vh {
+//   height: calc(100vh - 91.19px); // match .header height
+
+//   @media (min-width: 1024px) {
+//     height: calc(100vh - 102px); // match .header height
+//   }
+
+//   .admin-bar & {
+//     height: calc(100vh - 91.19px - 46px); // match .header height and #wpadminbar height
+
+//     @media (min-width: 783px) {
+//       height: calc(100vh - 91.19px - 32px); // match .header height and #wpadminbar height
+//     }
+//     @media (min-width: 1024px) {
+//       height: calc(100vh - 102px - 32px); // match .header height and #wpadminbar height
+//     }
+//   }
+// }
+
+@mixin min-height-100vh {
+  min-height: calc(100vh - 91.19px); // match .header height
+
+  @media (min-width: 1024px) {
+    min-height: calc(100vh - 102px); // match .header height
+  }
+
+  .admin-bar & {
+    min-height: calc(100vh - 91.19px - 46px); // match .header height and #wpadminbar height
+
+    @media (min-width: 783px) {
+      min-height: calc(100vh - 91.19px - 32px); // match .header height and #wpadminbar height
+    }
+    @media (min-width: 1024px) {
+      min-height: calc(100vh - 102px - 32px); // match .header height and #wpadminbar height
+    }
+  }
+}

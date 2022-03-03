@@ -1,0 +1,27 @@
+/**
+ * Clear
+ *
+ * Clear floats, aka clearfix
+ *
+ * @link http://nicolasgallagher.com/micro-clearfix-hack/
+ *
+ * @usage
+ * @extend %clear;
+ * @include clear;
+ *
+ * @package Baseline
+ * @subpackage Styles
+ * @since 2.0.0
+ */
+%clear {
+
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin clear {
+  @extend %clear;
+}

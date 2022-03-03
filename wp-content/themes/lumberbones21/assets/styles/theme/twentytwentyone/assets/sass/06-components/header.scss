@@ -1,0 +1,87 @@
+// Site header
+
+.o-header {
+	background-color: var(--branding--color-background);
+	color: var(--branding--color-text);
+}
+
+.o-header__inner {
+    padding: 0 5px;
+    @include media(mobile) {
+        padding: 0;
+    }
+}
+
+.o-header__container {
+    display: flex;
+    width: 100%;
+}
+
+// .o-header__logo {
+//     padding: var(--global--spacing-vertical);
+//     @include media(mobile) {
+//         padding: var(--global--spacing-vertical);
+//     }
+// }
+
+.o-header__navigation {
+	width: 100%;
+}
+
+.o-header__links {
+    display: flex;
+    align-items: center;
+}
+
+.wp-block-buttons > .o-header__button {
+    margin-bottom: 0;
+    & > .wp-block-button__link {
+        padding: var(--button--padding-vertical);
+    }
+    &:not(:last-child) {
+        margin-right: 16px;
+    }
+    &.o-header__button-mobile-hide {
+        display: none;
+        @include media(mobile) {
+            display: block;
+        }
+    }
+}
+
+.o-header__logo-link {
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 1000%;
+    text-decoration: none;
+    max-width: var(--branding--logo--max-width-mobile);
+    margin: var(--global--spacing-unit) 0;
+    height: var(--branding--logo--max-height-mobile);
+    @include media(mobile) {
+        max-width: var(--branding--logo--max-width);
+		max-height: var(----branding--logo--max-height)
+    }
+}
+
+.menu-toggle-container {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    @include media(laptop) {
+        display: none;
+    }
+    a {
+        padding: 12px;
+    }
+}
+
+.menu-toggle-container .o-header__mobile-button {
+    padding: 12px;
+    overflow: visible;
+    text-align: center;
+    display: flex;
+}

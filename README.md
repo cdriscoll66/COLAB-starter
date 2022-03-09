@@ -1,4 +1,4 @@
-# LumberBones 21
+# LumberBones Demo
 
 Yeah so it goes, 
 Yeah so it goes, 

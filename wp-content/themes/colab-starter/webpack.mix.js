@@ -1,5 +1,5 @@
 const config = {
-    host: "bonesjack21.lndo.site",
+    host: "colab-starter.lndo.site",
     sourcePath: "assets",
     publicPath: "dist",
 };

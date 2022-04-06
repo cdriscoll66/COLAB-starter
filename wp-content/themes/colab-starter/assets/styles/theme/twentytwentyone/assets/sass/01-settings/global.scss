@@ -88,6 +88,8 @@ $baseline-unit: 10px;
 	--global--color-background: var(--global--color-white); /* Mint, default body background */
 	--global--color-border: var(--global--color-primary); /* Used for borders (separators) */
 
+    --global--color-tertiary: var(--global--color-light-gray); /* Headings */
+
 	/* Spacing */
 	--global--spacing-unit: #{2 * $baseline-unit}; // 20px
 	--global--spacing-measure: unset; // Use ch units here. ie: 60ch = 60 character max-width
@@ -101,7 +103,7 @@ $baseline-unit: 10px;
 	--form--font-family: var(--global--font-secondary);
 	--form--font-size: var(--global--font-size-sm);
 	--form--line-height: var(--global--line-height-body);
-	--form--color-text: var(--global--color-dark-gray); // Text color in input fields is always dark over light background.
+	--form--color-text: var(--global--color-primary); // Text color in input fields is always dark over light background.
 	--form--color-ranged: var(--global--color-secondary);
 	--form--label-weight: 500;
 	--form--border-color: var(--global--color-secondary);
@@ -155,7 +157,7 @@ $baseline-unit: 10px;
 	--branding--description--font-family: var(--global--font-secondary);
 	--branding--description--font-size: var(--global--font-size-sm);
 	--branding--description--font-family: var(--global--font-secondary);
-    --branding--color-background: var(--global--color-light-gray);
+    --branding--color-background: var(--global--color-tertiary);
 
 	--branding--logo--max-width: 75px;
 	--branding--logo--max-height: 75px;
@@ -189,9 +191,9 @@ $baseline-unit: 10px;
 	--pagination--font-weight-strong: 600;
 
 	/* Footer */
-	--footer--color-text: var(--global--color-red);
+	--footer--color-text: var(--global--color-secondary);
 	--footer--color-link: var(--global--color-white);
-	--footer--color-link-hover: var(--global--color-white-50);
+	--footer--color-link-hover: var(--global--color-tertiary);
 	--footer--font-family: var(--global--font-primary);
 	--footer--font-size: var(--global--font-size-sm);
     --footer--color-background: var(--global--color-black);
@@ -223,9 +225,9 @@ $baseline-unit: 10px;
 	--separator--height: 1px;
 
 	/* Block: Table */
-	--table--stripes-border-color: var(--global--color-light-gray);
-	--table--stripes-background-color: var(--global--color-light-gray);
-	--table--has-background-text-color: var(--global--color-dark-gray);
+	--table--stripes-border-color: var(--global--color-tertiary);
+	--table--stripes-background-color: var(--global--color-tertiary);
+	--table--has-background-text-color: var(--global--color-secondary);
 
 	/* Widgets */
 	--widget--line-height-list: 1.9;

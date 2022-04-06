@@ -1,8 +1,8 @@
-name: lumberbones-demo
+name: colab-starter
 recipe: pantheon
 config:
   framework: wordpress
-  site: lumberbones-demo
+  site: colab-starter
   id: 571e5b9f-5242-4af3-9a50-3a920b78dfc4
 colab:
   lando: 3.0.26
@@ -11,7 +11,7 @@ colab:
   version: 1.0.8
 proxy:
   node:
-    - sync-bonesjack21.lndo.site:3000
+    - sync-colab-starter.lndo.site:3000
 services:
   node:
     type: node:custom
@@ -36,11 +36,11 @@ tooling:
   prod:
     service: node
     description: '-- Runs production build of assets'
-    cmd: cd $LANDO_MOUNT/wp-content/themes/lumberbones21/ && npm install && npm run production
+    cmd: cd $LANDO_MOUNT/wp-content/themes/colab-starter/ && npm install && npm run production
   watch:
     service: node
     description: '-- Runs development build of assets and watches file changes'
-    cmd: cd $LANDO_MOUNT/wp-content/themes/lumberbones21/ && npm install && npm run watch
+    cmd: cd $LANDO_MOUNT/wp-content/themes/colab-starter/ && npm install && npm run watch
   xdebug-on:
     service: appserver
     description: '-- Enable Xdebug for NGINX'

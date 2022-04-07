@@ -1,5 +1,5 @@
 footer {
-    background-color:var(--footer--color-background);
+    background-color: var(--footer--color-background);
     color: var(--footer--color-text);
     a {
         color: var(--footer--color-link);
@@ -8,33 +8,31 @@ footer {
         }
     }
 
-.o-footer__inner {
-    display: flex;
-    flex-flow: column nowrap;
-    padding-top: var(--footer--padding-vertical);
-    padding-bottom: var(--footer--padding-vertical);
+    .o-footer__inner {
+        display: flex;
+        flex-flow: column nowrap;
+        padding-top: var(--footer--padding-vertical);
+        padding-bottom: var(--footer--padding-vertical);
+    }
 
-}
+    .o-footer__section--nav {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
 
-.o-footer__section--nav {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-
-.o-footer__nav--col {
-    width: 100%;
-    text-align: center;
-    @include media(tablet) {
-        width: 25%;
-        text-align: left;
+    .o-footer__nav--col {
+        width: 100%;
+        text-align: center;
+        @include media(tablet) {
+            width: 25%;
+            text-align: left;
+        }
     }
 }
 
-}
-
 .o-footer__subfooter {
-    background-color:var(--global--color-light-gray);
+    background-color: var(--global--color-light-gray);
     color: var(--global--color-primary);
 }
 

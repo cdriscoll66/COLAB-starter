@@ -1,8 +1,8 @@
 // Site header
 
 .o-header {
-	background-color: var(--branding--color-background);
-	color: var(--branding--color-text);
+    background-color: var(--branding--color-background);
+    color: var(--branding--color-text);
 }
 
 .o-header__inner {
@@ -25,7 +25,7 @@
 // }
 
 .o-header__navigation {
-	width: 100%;
+    width: 100%;
 }
 
 .o-header__links {
@@ -63,7 +63,7 @@
     height: var(--branding--logo--max-height-mobile);
     @include media(mobile) {
         max-width: var(--branding--logo--max-width);
-		max-height: var(----branding--logo--max-height)
+        max-height: var(----branding--logo--max-height);
     }
 }
 

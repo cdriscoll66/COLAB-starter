@@ -35,38 +35,38 @@
  * - Add double vertical margins here for clearer hierarchy
  */
 .site-main > * {
-	margin-top: calc(3 * var(--global--spacing-vertical));
-	margin-bottom: calc(3 * var(--global--spacing-vertical));
+    margin-top: calc(3 * var(--global--spacing-vertical));
+    margin-bottom: calc(3 * var(--global--spacing-vertical));
 
-	&:first-child {
-		margin-top: 0;
-	}
+    &:first-child {
+        margin-top: 0;
+    }
 
-	&:last-child {
-		margin-bottom: 0;
-	}
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 /**
  * Set the default maximum responsive content-width
  */
 .default-max-width {
-	@extend %responsive-aligndefault-width;
+    @extend %responsive-aligndefault-width;
 }
 
 /**
  * Set the wide maximum responsive content-width
  */
 .wide-max-width {
-	@extend %responsive-alignwide-width;
+    @extend %responsive-alignwide-width;
 }
 
 /**
  * Set the full maximum responsive content-width
  */
 .full-max-width {
-	@extend %responsive-alignfull-width-mobile;
-	@extend %responsive-alignfull-width;
+    @extend %responsive-alignfull-width-mobile;
+    @extend %responsive-alignfull-width;
 }
 
 /*
@@ -93,22 +93,23 @@
 .entry-content > *,
 [class*="inner-container"] > *,
 .wp-block-template-part > *,
-.wp-block-post-template :where(li > *) { // using :where keeps specificity low.
-	margin-top: calc(0.666 * var(--global--spacing-vertical));
-	margin-bottom: calc(0.666 * var(--global--spacing-vertical));
+.wp-block-post-template :where(li > *) {
+    // using :where keeps specificity low.
+    margin-top: calc(0.666 * var(--global--spacing-vertical));
+    margin-bottom: calc(0.666 * var(--global--spacing-vertical));
 
-	@include media(mobile) {
-		margin-top: var(--global--spacing-vertical);
-		margin-bottom: var(--global--spacing-vertical);
-	}
+    @include media(mobile) {
+        margin-top: var(--global--spacing-vertical);
+        margin-bottom: var(--global--spacing-vertical);
+    }
 
-	&:first-child {
-		margin-top: 0;
-	}
+    &:first-child {
+        margin-top: 0;
+    }
 
-	&:last-child {
-		margin-bottom: 0;
-	}
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 // .site-footer > *,
@@ -149,23 +150,22 @@
  * - Adds special margin overrides for alignment utility classes
  */
 .entry-content > * {
+    &.alignleft,
+    &.alignright,
+    &.alignleft:first-child + *,
+    &.alignright:first-child + *,
+    &.alignfull.has-background {
+        margin-top: 0;
+    }
 
-	&.alignleft,
-	&.alignright,
-	&.alignleft:first-child + *,
-	&.alignright:first-child + *,
-	&.alignfull.has-background {
-		margin-top: 0;
-	}
+    &:last-child,
+    &.alignfull.has-background {
+        margin-bottom: 0;
+    }
 
-	&:last-child,
-	&.alignfull.has-background {
-		margin-bottom: 0;
-	}
-
-	/* Reset alignleft and alignright margins after alignfull */
-	&.alignfull + .alignleft,
-	&.alignfull + .alignright {
-		margin-top: var(--global--spacing-vertical);
-	}
+    /* Reset alignleft and alignright margins after alignfull */
+    &.alignfull + .alignleft,
+    &.alignfull + .alignright {
+        margin-top: var(--global--spacing-vertical);
+    }
 }

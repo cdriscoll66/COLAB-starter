@@ -68,8 +68,8 @@
 
 	// Focus Button outline color should always match the current text color
 	&:focus {
-		outline-offset: -6px;
-		outline: 2px dotted currentColor;
+		outline-offset: -2px;
+		outline: 2px solid currentColor;
 	}
 
 	// Disabled Button colors

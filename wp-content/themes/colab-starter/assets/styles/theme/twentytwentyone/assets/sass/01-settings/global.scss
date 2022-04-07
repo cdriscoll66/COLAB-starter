@@ -84,7 +84,7 @@ $baseline-unit: 10px;
 
 	--global--color-primary: var(--global--color-dark-gray); /* Body text color, site title, footer text color. */
 	--global--color-secondary: var(--global--color-medium-gray); /* Headings */
-	--global--color-primary-hover: var(--global--color-primary);
+	--global--color-primary-hover: var(--global--color-light-gray);
 	--global--color-background: var(--global--color-white); /* Mint, default body background */
 	--global--color-border: var(--global--color-primary); /* Used for borders (separators) */
 
@@ -122,15 +122,15 @@ $baseline-unit: 10px;
 	--button--color-text-hover: var(--global--color-secondary);
 	--button--color-text-active: var(--global--color-secondary);
 	--button--color-background: var(--global--color-secondary);
-	--button--color-background-active: var(--global--color-background);
+	--button--color-background-active: var(--global--color-primary);
 	// Fonts
 	--button--font-family: var(--global--font-primary);
 	--button--font-size: var(--global--font-size-base);
 	--button--font-weight: 500;
 	--button--line-height: 1.5;
 	// Borders
-	--button--border-width: 3px;
-	--button--border-radius: 0;
+	--button--border-width: 2px;
+	--button--border-radius: 2px;
 	// Spacing
 	--button--padding-vertical: 15px;
 	--button--padding-horizontal: calc(2 * var(--button--padding-vertical));

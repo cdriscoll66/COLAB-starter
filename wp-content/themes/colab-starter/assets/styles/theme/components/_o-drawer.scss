@@ -10,21 +10,35 @@
 
 .o-drawer {
     position: absolute;
+    top: 0;
+    left: -90vw;
     width: 90vw;
+    z-index: 100;
     background-color: var(--branding--color-background);
     height: 100%;
-    padding: 60px;
-    left: -90vw;
-    transition: left 0.5s;
+    padding: 30px 60px 60px;
+    transition: left .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    visibility: hidden;
     .show-menu & {
+        transition: left .5s cubic-bezier(0.075, 0.82, 0.165, 1);
         left: 0;
+    }
+    .visible & {
+        visibility: visible;
     }
 }
 
-.o-drawer__close-button {
-    padding: 12px;
-    overflow: visible;
-    text-align: center;
+.o-drawer__button--container {
     display: flex;
     justify-content: flex-end;
+    width: 100%;
+}
+
+.o-drawer__close-button {
+    overflow: visible;
+    text-align: center;
+    display:flex;
+    span {
+        width: 14px;
+    }
 }

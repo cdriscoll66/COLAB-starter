@@ -1,12 +1,12 @@
-
-<div class="o-drawer__overlay">
+<div class="o-drawer__overlay"></div>
 <aside class="o-drawer">
-    <a aria-label="Open mobile" class="o-drawer__close-button js-close">
-        <span class="icon close-icon"></span>
-    </a>
-    <div class="o-drawer__content mobile-menu">
-     {% include 'partials/global-navigation.twig' %}
-    </div>
-
+  <div class="o-drawer__button--container">
+    <button aria-label="Open mobile"
+      class="o-drawer__close-button has-background has-transparent-background-color js-close">
+      <span class="icon close-icon"></span>
+    </button>
+  </div>
+  <div class="o-drawer__content mobile-menu">
+    {% include 'partials/global-navigation.twig' %}
+  </div>
 </aside>
-</div>

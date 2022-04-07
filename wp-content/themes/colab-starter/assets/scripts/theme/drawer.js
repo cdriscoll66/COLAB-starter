@@ -1,27 +1,38 @@
 function init() {
     const body = document.querySelector("body");
     const button = document.querySelector(".js-toggle");
-    const closebutton = document.querySelector(".js-close");
+    const buttonclose = document.querySelector(".js-close");
     const overlay = document.querySelector(".o-drawer__overlay");
 
-    button.onclick = function () {
-        body.classList.toggle("show-menu");
+    const openNav = () => {
+        body.classList.add("show-menu", "visible");
+    }
+
+    const closeNav = () => {
+        body.classList.remove("show-menu");
+        setTimeout( () => {
+            body.classList.remove("visible");
+        }, 500);
+    }
+
+    button.onclick = () => {
+        openNav();
     };
 
     window.addEventListener('resize', () => {
-        body.classList.remove("show-menu")
+        closeNav();
     });
 
-    overlay.onclick = function () {
-        body.classList.remove("show-menu");
+    overlay.onclick = () => {
+        closeNav();
     };
 
-    overlay.onclick = function () {
-        body.classList.remove("show-menu");
+    overlay.onclick = () => {
+        closeNav();
     };
 
-    buttonclose.onclick = function () {
-        body.classList.remove("show-menu");
+    buttonclose.onclick = () => {
+        closeNav();
     };
 
 }

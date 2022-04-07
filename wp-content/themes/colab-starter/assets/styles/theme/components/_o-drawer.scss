@@ -15,11 +15,10 @@
     height: 100%;
     padding: 60px;
     left: -90vw;
-    transition: left .5s;
+    transition: left 0.5s;
     .show-menu & {
-        left:0;
+        left: 0;
     }
-
 }
 
 .o-drawer__close-button {

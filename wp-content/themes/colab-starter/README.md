@@ -1,4 +1,4 @@
-![](https://github.com/teamcolab/COLAB-starter-theme/blob/develop/wp-content/themes/colab-starter/dist/images/logo-dark.pngt/images/logo-dark.png)
+![COLAB ICON](https://github.com/teamcolab/COLAB-starter-theme/blob/develop/wp-content/themes/colab-starter/dist/images/logo-dark.png?raw=true)
 
 ## COLAB Starter Theme.
 

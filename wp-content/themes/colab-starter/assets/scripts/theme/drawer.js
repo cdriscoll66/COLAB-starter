@@ -27,14 +27,9 @@ function init() {
         closeNav();
     };
 
-    overlay.onclick = () => {
-        closeNav();
-    };
-
     buttonclose.onclick = () => {
         closeNav();
     };
-
 }
 
 export { init as default };

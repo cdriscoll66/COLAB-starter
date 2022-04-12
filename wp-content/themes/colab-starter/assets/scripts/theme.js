@@ -1,4 +1,5 @@
 import drawer from "./theme/drawer";
+import mobileSubmenu from './theme/mobile-submenu'
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     /** Call */
 
     drawer();
+    mobileSubmenu();
 
 
 });

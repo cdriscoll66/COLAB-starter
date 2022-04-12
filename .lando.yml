@@ -3,7 +3,7 @@ recipe: pantheon
 config:
   framework: wordpress
   site: colab-starter
-  id: 571e5b9f-5242-4af3-9a50-3a920b78dfc4
+  id: 2f3b3c01-d3ca-4acc-8f92-762e35d662b8
 colab:
   lando: 3.0.26
   recipe: pantheon

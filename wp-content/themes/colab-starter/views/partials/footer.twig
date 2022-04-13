@@ -1,30 +1,33 @@
-<footer>
+<footer class="o-footer">
 
     <div class="o-footer__inner alignwide">
 
         <div class="o-footer__section--nav">
 
             <div class="o-footer__nav--col">
-                <img src="/wp-content/themes/colab-starter/dist/images/logo-dark.png" width="75" height="75" alt="colab-logo">
+                <img src="{{ theme.link }}/dist/images/logo-dark.png" width="75" height="75" alt="colab-logo">
             </div>
-
+        {% if footer1 %}
             <div class="o-footer__nav--col">
                 {% include 'partials/footer-menu.twig' with {
                     'location': 'footer1' }
                 %}
             </div>
-
+        {% endif %}
+        {% if footer2 %}
            <div class="o-footer__nav--col">
                  {% include 'partials/footer-menu.twig' with {
                     'location': 'footer2' }
                 %}
             </div>
-
+        {% endif %}
+        {% if footer3 %}
             <div class="o-footer__nav--col">
                  {% include 'partials/footer-menu.twig' with {
                     'location': 'footer3' }
                 %}
             </div>
+        {% endif %}
         </div>
 
 

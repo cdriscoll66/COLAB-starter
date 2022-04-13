@@ -19,13 +19,15 @@ footer {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
+        @include media(tablet) {
+            flex-flow: row nowrap;
+        }
     }
 
     .o-footer__nav--col {
         width: 100%;
         text-align: center;
         @include media(tablet) {
-            width: 25%;
             text-align: left;
         }
     }

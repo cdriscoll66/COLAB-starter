@@ -1,17 +1,17 @@
 function init() {
-    const body = document.querySelector("body");
-    const button = document.querySelector(".js-toggle");
-    const buttonclose = document.querySelector(".js-close");
-    const overlay = document.querySelector(".o-drawer__overlay");
+    const body = document.querySelector('body');
+    const button = document.querySelector('.js-toggle');
+    const buttonclose = document.querySelector('.js-close');
+    const overlay = document.querySelector('.o-drawer__overlay');
 
     const openNav = () => {
-        body.classList.add("show-menu", "visible");
+        body.classList.add('show-menu', 'visible');
     }
 
     const closeNav = () => {
-        body.classList.remove("show-menu");
+        body.classList.remove('show-menu');
         setTimeout( () => {
-            body.classList.remove("visible");
+            body.classList.remove('visible');
         }, 500);
     }
 

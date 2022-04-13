@@ -1,8 +1,8 @@
-import drawer from "./theme/mobile-menu-drawer";
+import drawer from './theme/mobile-menu-drawer';
 import mobileSubmenu from './theme/mobile-submenu'
 
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
     /** Address HTML & Body no-js Class */
     (function () {
         /** Remove .no-js */
@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         /** Replace .no-js with .js */
         document.documentElement.className =
-            document.documentElement.className.replace("no-js", "js");
+            document.documentElement.className.replace('no-js', 'js');
         document.body.className = document.body.className.replace(
-            "no-js",
-            "js"
+            'no-js',
+            'js'
         );
     })();
 

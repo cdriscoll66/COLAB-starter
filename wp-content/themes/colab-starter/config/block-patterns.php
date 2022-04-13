@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Remove Core Block Patterns
  */
@@ -33,5 +34,3 @@ register_block_pattern_category('custom', [
 //         <!-- /wp:group -->
 //     ',
 // ]);
-
-

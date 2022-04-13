@@ -38,7 +38,9 @@ add_action('wp_dashboard_setup', function () {
             ]))
         );
 
-        $services = implode(', ', array_map(function ($a) { return sprintf('<span style="white-space: nowrap;">%s</span>', htmlentities($a)); }, [
+        $services = implode(', ', array_map(function ($a) {
+            return sprintf('<span style="white-space: nowrap;">%s</span>', htmlentities($a));
+        }, [
             'Strategy',
             'Design',
             'Development',

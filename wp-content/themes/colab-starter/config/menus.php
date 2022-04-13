@@ -9,5 +9,5 @@ return [
         'footer1'  => __('Footer 1'),
         'footer2'  => __('Footer 2'),
         'footer3'  => __('Footer 3')
-        ],
+    ],
 ];

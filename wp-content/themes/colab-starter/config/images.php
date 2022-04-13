@@ -10,6 +10,5 @@ return [
      *         'crop' => true,
      *     ]
      */
-    'sizes' => [
-    ],
+    'sizes' => [],
 ];

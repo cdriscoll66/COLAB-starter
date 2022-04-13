@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Add Excerpt to Page
  */

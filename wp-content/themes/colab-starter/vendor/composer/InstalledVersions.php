@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '38f8945925b330e55ace5ce7798fdd4ee8473365',
+    'reference' => '02f7e5c8a59f0cd465a52eca4d9a177e147e1118',
     'name' => 'rareloop/lumberjack',
   ),
   'versions' => 
@@ -103,12 +103,12 @@ private static $installed = array (
     ),
     'laminas/laminas-diactoros' => 
     array (
-      'pretty_version' => '2.8.0',
-      'version' => '2.8.0.0',
+      'pretty_version' => '2.9.2',
+      'version' => '2.9.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => '0c26ef1d95b6d7e6e3943a243ba3dc0797227199',
+      'reference' => '07475df6b4bf6277ae8b9cbbc94d0ac6fee5e726',
     ),
     'laminas/laminas-zendframework-bridge' => 
     array (
@@ -118,6 +118,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '7f049390b756d34ba5940a8fb47634fbb51f79ab',
+    ),
+    'laravel/serializable-closure' => 
+    array (
+      'pretty_version' => 'v1.1.1',
+      'version' => '1.1.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9e4b005daa20b0c161f3845040046dc9ddc1d74e',
     ),
     'mindplay/middleman' => 
     array (
@@ -148,21 +157,12 @@ private static $installed = array (
     ),
     'monolog/monolog' => 
     array (
-      'pretty_version' => '1.26.1',
-      'version' => '1.26.1.0',
+      'pretty_version' => '1.27.0',
+      'version' => '1.27.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'c6b00f05152ae2c9b04a448f99c7590beb6042f5',
-    ),
-    'opis/closure' => 
-    array (
-      'pretty_version' => '3.6.3',
-      'version' => '3.6.3.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '3d81e4309d2a927abbe66df935f4bb60082805ad',
+      'reference' => '52ebd235c1f7e0d5e1b16464b695a28335f8e44a',
     ),
     'palmiak/timber-acf-wp-blocks' => 
     array (
@@ -184,12 +184,12 @@ private static $installed = array (
     ),
     'php-di/php-di' => 
     array (
-      'pretty_version' => '6.3.5',
-      'version' => '6.3.5.0',
+      'pretty_version' => '6.4.0',
+      'version' => '6.4.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'b8126d066ce144765300ee0ab040c1ed6c9ef588',
+      'reference' => 'ae0f1b3b03d8b29dff81747063cbfd6276246cc4',
     ),
     'php-di/phpdoc-reader' => 
     array (
@@ -289,7 +289,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '38f8945925b330e55ace5ce7798fdd4ee8473365',
+      'reference' => '02f7e5c8a59f0cd465a52eca4d9a177e147e1118',
     ),
     'rareloop/lumberjack-core' => 
     array (
@@ -361,8 +361,8 @@ private static $installed = array (
     ),
     'symfony/polyfill-ctype' => 
     array (
-      'pretty_version' => 'v1.24.0',
-      'version' => '1.24.0.0',
+      'pretty_version' => 'v1.25.0',
+      'version' => '1.25.0.0',
       'aliases' => 
       array (
       ),
@@ -370,8 +370,8 @@ private static $installed = array (
     ),
     'symfony/polyfill-mbstring' => 
     array (
-      'pretty_version' => 'v1.24.0',
-      'version' => '1.24.0.0',
+      'pretty_version' => 'v1.25.0',
+      'version' => '1.25.0.0',
       'aliases' => 
       array (
       ),
@@ -379,8 +379,8 @@ private static $installed = array (
     ),
     'symfony/polyfill-php72' => 
     array (
-      'pretty_version' => 'v1.24.0',
-      'version' => '1.24.0.0',
+      'pretty_version' => 'v1.25.0',
+      'version' => '1.25.0.0',
       'aliases' => 
       array (
       ),
@@ -388,21 +388,21 @@ private static $installed = array (
     ),
     'symfony/polyfill-php80' => 
     array (
-      'pretty_version' => 'v1.24.0',
-      'version' => '1.24.0.0',
+      'pretty_version' => 'v1.25.0',
+      'version' => '1.25.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '57b712b08eddb97c762a8caa32c84e037892d2e9',
+      'reference' => '4407588e0d3f1f52efb65fbe92babe41f37fe50c',
     ),
     'symfony/var-dumper' => 
     array (
-      'pretty_version' => 'v4.4.37',
-      'version' => '4.4.37.0',
+      'pretty_version' => 'v4.4.39',
+      'version' => '4.4.39.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'e74eee4ec02de71db3d60151aa5b203c990556df',
+      'reference' => '35237c5e5dcb6593a46a860ba5b29c1d4683d80e',
     ),
     'tightenco/collect' => 
     array (
@@ -424,12 +424,12 @@ private static $installed = array (
     ),
     'twig/twig' => 
     array (
-      'pretty_version' => 'v2.14.11',
-      'version' => '2.14.11.0',
+      'pretty_version' => 'v2.14.13',
+      'version' => '2.14.13.0',
       'aliases' => 
       array (
       ),
-      'reference' => '66baa66f29ee30e487e05f1679903e36eb01d727',
+      'reference' => '66856cd0459df3dc97d32077a98454dc2a0ee75a',
     ),
     'upstatement/routes' => 
     array (

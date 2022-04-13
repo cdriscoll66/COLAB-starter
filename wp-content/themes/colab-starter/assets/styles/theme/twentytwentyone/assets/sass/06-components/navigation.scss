@@ -122,7 +122,7 @@ ul.mobile-menu {
     li.menu-item {
         padding: $baseline-unit 0;
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         & > a {
             font-size: var(--primary-nav--font-size-mobile);
             flex-grow: 1;
@@ -130,7 +130,6 @@ ul.mobile-menu {
         &.menu-item-has-children {
             position: relative;
             div.o-menu__subnav {
-                position: absolute;
                 top: 100%;
                 max-height: 0;
                 width: 100%;
@@ -185,7 +184,7 @@ ul.mobile-menu {
 
 li.menu-item-has-children.expanded {
     & > div.o-menu__subnav {
-        max-height: 600px;
+        max-height: 100vh;
     }
     .menu-expand {
         transform: rotate(180deg);

@@ -1,11 +1,11 @@
 const config = {
-    host: "colab-starter.lndo.site",
-    sourcePath: "assets",
-    publicPath: "dist",
+    host: 'colab-starter.lndo.site',
+    sourcePath: 'assets',
+    publicPath: 'dist',
 };
 
-const mix = require("laravel-mix");
-const { exit } = require("browser-sync");
+const mix = require('laravel-mix');
+const { exit } = require('browser-sync');
 
 /** Set Public Path */
 mix.setPublicPath(config.publicPath);
@@ -19,38 +19,38 @@ mix.browserSync({
     open: false,
     host: config.host,
     socket: {
-        domain: "sync-" + config.host,
+        domain: 'sync-' + config.host,
     },
     files: [
-        config.publicPath + "/styles/*.css",
-        config.publicPath + "/scripts/*.js",
-        "views/**/*.*",
+        config.publicPath + '/styles/*.css',
+        config.publicPath + '/scripts/*.js',
+        'views/**/*.*',
     ],
     proxy: {
-        target: "http://appserver_nginx",
+        target: 'http://appserver_nginx',
     },
 });
 
 /** Styles */
-mix.sass(sourcePath("styles/login.scss"), publicPath("styles"));
-mix.sass(sourcePath("styles/admin.scss"), publicPath("styles"));
-mix.sass(sourcePath("styles/theme.scss"), publicPath("styles"));
-mix.sass(sourcePath("styles/editor.scss"), publicPath("styles"));
+mix.sass(sourcePath('styles/login.scss'), publicPath('styles'));
+mix.sass(sourcePath('styles/admin.scss'), publicPath('styles'));
+mix.sass(sourcePath('styles/theme.scss'), publicPath('styles'));
+mix.sass(sourcePath('styles/editor.scss'), publicPath('styles'));
 mix.sass(sourcePath('styles/print.scss'), publicPath('styles'));
 
 /** Scripts */
-mix.js(sourcePath("scripts/blocks.js"), publicPath("scripts"));
-mix.js(sourcePath("scripts/theme.js"), publicPath("scripts"));
+mix.js(sourcePath('scripts/blocks.js'), publicPath('scripts'));
+mix.js(sourcePath('scripts/theme.js'), publicPath('scripts'));
 
 /** Images */
 // mix.copyDirectory(sourcePath('images'), publicPath('images'));
-require("laravel-mix-imagemin");
+require('laravel-mix-imagemin');
 mix.imagemin(
     {
         // CopyWebpackPlugin patterns
-        context: sourcePath("images"),
-        from: "**",
-        to: "images",
+        context: sourcePath('images'),
+        from: '**',
+        to: 'images',
     },
     {}, // CopyWebpackPlugin options
     {
@@ -61,11 +61,11 @@ mix.imagemin(
 );
 
 /** Fonts */
-mix.copyDirectory(sourcePath("fonts"), publicPath("fonts"));
+mix.copyDirectory(sourcePath('fonts'), publicPath('fonts'));
 
 /** Options */
 mix.options({
-    postCss: [require("postcss-svg")],
+    postCss: [require('postcss-svg')],
     processCssUrls: false,
     cssNano: {
         calc: false,
@@ -77,7 +77,7 @@ mix.options({
 // const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin');
 mix.webpackConfig({
     externals: {
-        jquery: "jQuery",
+        jquery: 'jQuery',
     },
     plugins: [
         // new SVGSpritemapPlugin(sourcePath('images/spritemap/**/*.svg'), {

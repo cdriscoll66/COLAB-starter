@@ -34,7 +34,7 @@ wp.domReady(() => {
         //     className: 'is-style-example-variation-name'
         //   },
         //   innerBlocks: [
-        //     [ 'core/html', { content: '<span aria-hidden='true' class='wp-block-group__background'>DO NOT REMOVE</span>' } ]
+        //     [ 'core/html', { content: '<span aria-hidden="true" class="wp-block-group__background">DO NOT REMOVE</span>' } ]
         //   ],
         // });
     })();

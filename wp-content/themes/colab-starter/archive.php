@@ -13,13 +13,27 @@ namespace App;
 
 use App\Http\Controllers\Controller;
 use Rareloop\Lumberjack\Http\Responses\TimberResponse;
-use Rareloop\Lumberjack\Post;
+use Rareloop\Lumberjack\QueryBuilder;
+use App\PostTypes\Post;
 use Timber\Timber;
 
 class ArchiveController extends Controller
 {
     public function handle()
     {
+        QueryBuilder::macro('taxQuery', function ($term) {
+            $this->params['tax_query'] = [
+                'relation' => 'AND',
+                [
+                    'taxonomy' => $term->taxonomy,
+                    'field' => 'slug',
+                    'terms' => $term->slug,
+                ]
+            ];
+
+            return $this;
+        });
+
         $context = Timber::get_context();
         $context['title'] = 'Archive';
 
@@ -34,11 +48,35 @@ class ArchiveController extends Controller
         } elseif (is_category()) {
             $context['title'] = single_cat_title('', false);
         } elseif (is_post_type_archive()) {
+            $context['post_type'] = get_queried_object();
             $context['title'] = post_type_archive_title('', false);
+        } elseif (is_tax()) {
+            $context['taxonomy'] = get_queried_object();
+            $context['title'] = $context['taxonomy']->name;
         }
 
-        // TODO: Currently only works for posts, fix for custom post types
-        $context['posts'] = Post::query();
+        if (!empty($context['post_type'])) {
+            $context['posts'] = (new QueryBuilder)
+                ->wherePostType([
+                    $context['post_type']->name,
+                ])
+                ->limit($context['posts_per_page'])
+                ->offset($context['posts_per_page'] * ($context['paged'] > 1 ? $context['paged'] - 1 : 0))
+                ->get();
+        } elseif (!empty($context['taxonomy'])) {
+            $context['posts'] = (new QueryBuilder)
+                ->taxQuery($context['taxonomy'])
+                ->limit($context['posts_per_page'])
+                ->offset($context['posts_per_page'] * ($context['paged'] > 1 ? $context['paged'] - 1 : 0))
+                ->get();
+        } else {
+            $context['posts'] = Post::builder()
+                ->limit($context['posts_per_page'])
+                ->offset($context['posts_per_page'] * ($context['paged'] > 1 ? $context['paged'] - 1 : 0))
+                ->get();
+        }
+
+        $context['paginate_links'] = paginate_links();
 
         return new TimberResponse('templates/posts.twig', $context);
     }

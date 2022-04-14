@@ -18,16 +18,16 @@ class AuthorController extends Controller
     {
         global $wp_query;
 
-        $data = Timber::get_context();
+        $context = Timber::get_context();
         $author = new TimberUser($wp_query->query_vars['author']);
 
-        $data['author'] = $author;
-        $data['title'] = 'Author Archives: ' . $author->name();
+        $context['author'] = $author;
+        $context['title'] = 'Author Archives: ' . $author->name();
 
-        $data['posts'] = Post::query([
+        $context['posts'] = Post::query([
             'author' => $author->ID
         ]);
 
-        return new TimberResponse('templates/posts.twig', $data);
+        return new TimberResponse('templates/posts.twig', $context);
     }
 }

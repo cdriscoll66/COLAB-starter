@@ -25,7 +25,10 @@ class Lumberjack extends LumberjackCore
         $context['is_page']                = is_page();
         $context['is_paged']               = is_paged();
         $context['post_password_required'] = post_password_required();
+        $context['posts_per_page']         = get_option('posts_per_page');
 
+        global $paged;
+        $context['paged'] = $paged;
 
         // In Timber, you can use TimberMenu() to make a standard Wordpress menu available to the
         // Twig template as an object you can loop through. And once the menu becomes available to

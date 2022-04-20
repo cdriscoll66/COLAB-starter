@@ -20,8 +20,7 @@ class IndexController extends Controller
     public function handle()
     {
         $context = Timber::get_context();
-        // $context['title'] = get_queried_object()->post_title;
-
+        $context['title'] = get_queried_object() ? get_queried_object()->post_title : '';
         $context['posts'] = Post::builder()
             ->limit($context['posts_per_page'])
             ->offset($context['posts_per_page'] * ($context['paged'] > 1 ? $context['paged'] - 1 : 0))

@@ -164,8 +164,11 @@ ul.mobile-menu {
                     }
                 }
             }
+
             &.expanded > div.o-menu__subnav {
                 max-height: 100vh;
+            }
+            &.visible > div.o-menu__subnav {
                 visibility: visible;
             }
         }

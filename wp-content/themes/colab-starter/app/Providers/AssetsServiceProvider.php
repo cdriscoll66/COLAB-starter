@@ -24,7 +24,7 @@ class AssetsServiceProvider extends ServiceProvider
             /**
              * Fonts
              */
-            wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap', [], false); // Example Project, exampleproject.com, https://fonts.google.com/share?selection.family=Open%20Sans:ital,wght@0,400;0,700;1,400;1,700
+            // wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap', [], false); // Example Project, exampleproject.com, https://fonts.google.com/share?selection.family=Open%20Sans:ital,wght@0,400;0,700;1,400;1,700
 
             wp_enqueue_style('lumberjack/theme.css', Theme::mix('/styles/theme.css'), [], false);
             wp_enqueue_script('lumberjack/theme.js', Theme::mix('/scripts/theme.js'), ['jquery'], false, true);

@@ -11,17 +11,17 @@
 .o-drawer {
     position: absolute;
     top: 0;
-    left: -90vw;
+    right: -90vw;
     width: 90vw;
     z-index: 100;
     background-color: var(--branding--color-background);
     height: 100%;
     padding: 30px 60px 60px;
-    transition: left .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: right .5s cubic-bezier(0.075, 0.82, 0.165, 1);
     visibility: hidden;
     .show-menu & {
-        transition: left .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-        left: 0;
+        transition: right .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        right: 0;
     }
     .visible & {
         visibility: visible;

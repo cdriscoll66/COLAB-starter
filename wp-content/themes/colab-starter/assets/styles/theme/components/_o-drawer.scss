@@ -1,3 +1,8 @@
+//not sure where this should live - putting her for now
+body.show-menu {
+    overflow: hidden;
+}
+
 .o-drawer__overlay {
     @include cover;
     z-index: 10;
@@ -9,7 +14,8 @@
 }
 
 .o-drawer {
-    position: absolute;
+    overflow-y: scroll;
+    position: fixed;
     top: 0;
     right: -90vw;
     width: 90vw;
